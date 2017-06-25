@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-<<<<<<< HEAD
     <title>Test Page: Don't Panic - Trying To Add CSSEDUCATION Folder to the Master Branch</title>
     <meta charset="utf-8"> 
-=======
     <title>Test Page: Don't Panic</title>
     <meta charset="utf-8">
->>>>>>> a07fea9058ce19976679695e8a632df2115e34b6
     <style>
         .bkazure {
-          background-color: azure;
+          background: azure;
         }
         #bkorange {
           background-color: orange;
         }
        #exec-bio {
-        background-color: lightgray;
+        background: lightgray;
       }
       .bio-box {
         border: 1px solid black;
       }
 
-    .bio-box a{
-      color:green;
+    .bio-box a {
+    color: green;
     }
-     li a { 
+    .bio-box a {
+    color: pink;
+    }
+
+    a {
+    	color:green;
+    }
+
+    .bio-box { 
+    width:100%;
+     }
+
+    .bio-box {
+    	width:50%;
+    
+	}
+         li a { 
      color:red;
       } 
     /* li { 
       border: 1px solid black;
     } */
-    
+   #exec-bio.alert, .alert {
+    	background: red;
+    }
+
+    .para-colored {
+    	color:lightblue;
+    	background-color: black;
+    	width:50%;
+    	opacity: 80
+    }
+
     </style>
   </head>
   <body>
@@ -48,7 +71,7 @@
       </li>
     </ul>
     <h2>I'm an h2</h2>
-    <div id="exec-bio" class="bio-box">
+    <div id="exec-bio" class="bio-box alert">
       <a href="http://example.com/">I'm a link</a>
     </div>
     <div class="bio-box bkazure">
@@ -57,8 +80,9 @@
     <div class="bio-box">
       <a href="http://example.com/">I'm a link</a>
     </div>
-    <div class="bio-box">
+    <div class="bio-box alert">
       <a href="http://example.com/">I'm a link</a>
     </div>
+    <p class="para-colored">	Color this line something</p>
   </body>
 </html>
